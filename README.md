@@ -1,6 +1,14 @@
 # Positioning Elements in CSS
 
-## Problem Statement
+## Learning Goals
+
+- Pull content left or right with `float`
+- Clear floated content with a `clearfix`
+- Give fixed properties to elements with `position`
+- Change the depth of elements with `z-index`
+- Center block elements with `margin: auto`
+
+## Introduction
 
 One powerful feature of CSS the ability to position content in a variety of
 ways without having to write much HTML markup. There are a few different types
@@ -8,15 +16,7 @@ of positioning within CSS, some of which have multiple uses and applications.
 When it comes to page layouts, CSS has become king, so what can be taken advantage
 of to create user-friendly flows?
 
-## Objectives
-
-1. Use `float` to pull content left or right
-2. Create `clearfix` to clear floated content
-3. Use `position` to give fixed properties to elements
-4. Use `z-index` to change the depth of elements
-5. Use `margin: auto` to center block elements
-
-## Use `float` to Pull Content Left or Right
+## Pull Content Left or Right with `float`
 
 One way to position elements on a page is with the `float` property. The `float` property
 removes it from the normal flow of a page, and position it to the left or right of its 
@@ -46,7 +46,7 @@ block properties such as `margin` to give it spacing. When the class `.fall-belo
 the block of text continues to wrap around the image until there is a line-break in the text
 that allows it to flow around. 
 
-## Create `clearfix` to Clear Floated Content
+## Clear Floated Content with a `clearfix`
 
 When `float` is used with elements, there can be some unintended results. As elements are floated,
 it is important to notice how they affect the flow of a page, and reset floats as necessary. Not
@@ -109,7 +109,7 @@ to apply the `clearfix` hack, we can use the `display` property on the container
 **NOTE: There may still be unintended results with this new property that could potentially
 impact other properties like `z-index`, so use with caution!**
 
-## Use `position` to Give Fixed Properties to Elements
+## Give Fixed Properties to Elements with `position`
 
 Positioning allows you to place elements outside of the normal document flow. The `position` 
 property can allow a UI element to float over the top of other parts of the page, or always 
@@ -152,7 +152,7 @@ While positioning elements can allow for a lot of control in layout, be mindful 
 it is not a method you would use for entire layouts. However, there are many tasks it
 is suited for that enhances layout and functionality.
 
-## Use `z-index` to Change the Depth of Elements
+## Change the Depth of Elements with `z-index`
 
 Positioning and `z-index` often go hand-in-hand. Have you ever noticed UI elements that overlap part of
 the page, such as a drop down menu, tooltip, or a popover? When you click on a photo, a modal may pop
@@ -178,14 +178,13 @@ Try changing the `z-index` property of individual elements to stack them in a di
 default, the top-most element would be the blue square, with the id of `c`, but the red square with
 the id of `a` appears closest to you on the screen, since it has a higher `z-index` value.
 
-## Use `margin: auto` to Center Block Elements
+## Center Block Elements with `margin: auto`
 
 In constructing a layout and various layout elements, centering in the "unknown"
 will be needed often to align elements in the center of a page without giving fixed
 values that may not work for various screen sizes. With `margin: 0 auto;` it is possible!
 
 <iframe width="100%" height="300" src="//jsfiddle.net/flatiron_school/VGue9/embedded/html,css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
 
 In the example above, we've wrapped all of content inside of one element, which is
 the div with the class of wrapper. By setting the width of this wrapper element, it
